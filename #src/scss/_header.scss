@@ -1,0 +1,245 @@
+
+
+.header {
+
+  a {
+    opacity: 1;
+    transition: all .3s;
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  // .header__top
+
+  &__top {
+    background: #2D2D2D;
+  }
+
+  // .header__top-inner
+
+  &__top-inner {
+    min-height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    color: #FFFFFF;
+  }
+
+  // .header__about
+
+  &__about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .header__logo
+
+  &__logo {
+  }
+
+  // .header__logo-img
+
+  &__logo-img {
+  }
+
+  // .header__about-text
+
+  &__about-text {
+    max-width: 167px;
+    margin-left: 21px;
+    font-size: 14px;
+    line-height: 142.19%;
+  }
+
+  // .header__info
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  // .header__schedule
+
+  &__schedule {
+    font-size: 14px;
+    line-height: 142.19%;
+    padding-left: 31px;
+    margin-right: 18px;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      top: 0;
+      left: 0;
+      background-image: url('../images/clock-icon.svg');
+    }
+  }
+
+  // .header__address
+
+  &__address {
+    max-width: 163px;
+    font-size: 14px;
+    line-height: 142.19%;
+    padding-left: 31px;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      top: 50%;
+      transform: translate(0%, -50%);
+      left: 0;
+      background-image: url('../images/mapmarker.svg');
+    }
+  }
+
+  // .header__btn
+
+  &__btn {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 141.69%;
+    font-family: 'PT Sans', sans-serif;
+    padding: 8px 27px;
+    border: 1px solid #FFBF1D;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  // .header__tels
+
+  &__tels {
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      top: 50%;
+      left: -34px;
+      transform: translate(0%, -50%);
+      background-image: url('../images/tel-icon.svg');
+    }
+  }
+
+  // .header__tel
+
+  &__tel {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156.69%;
+  }
+
+  // .header__bottom
+
+  &__bottom { 
+    background: $white;
+  }
+
+  // .header__bottom-inner
+
+  &__bottom-inner {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .header__nav
+
+  &__nav {
+  }
+
+  // .header__nav-list
+
+  &__nav-list {
+  }
+
+  // .header__nav-item
+
+  &__nav-item {
+    display: inline-block;
+  }
+
+  &__nav-item + &__nav-item {
+    margin-left: 30px;
+  }
+
+  // .header__nav-link
+
+  &__nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156.69%;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 0;
+      left: auto;
+      right: 0;
+      bottom: -15px;
+      background-color: #FFBF1D;
+      height: 3px;
+      transition: all .3s;
+    }
+    &:hover::after{
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+  }
+
+  // .header__input-box
+
+  &__input-box {
+    position: relative;
+  }
+
+  // .header__input
+
+  &__input {
+    width: 270px;
+    height: 30px;
+    border: 1px solid rgba(45, 45, 45, 0.6);
+
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    padding: 5px 40px 5px 15px;
+  }
+
+  // .header__input-search
+
+  &__input-search {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 4;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      z-index: 6;
+      background-image: url('../images/search.svg');
+    }
+  }
+}
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;

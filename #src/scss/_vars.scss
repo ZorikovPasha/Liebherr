@@ -1,0 +1,19 @@
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'PT Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+@font-face {
+  font-family: 'FuturaPt-Bold';
+  src: url('../fonts/futura-pt-bold.woff2') format('woff2'),
+  url('../fonts/futura-pt-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+$yellowOrange: #FCB427;
+$Orange: #FF971D;
+$black: #2D2D2D;
+$dirt: #535554;
+$white: #F3F3F3;
+$grey: #C4C4C4;
