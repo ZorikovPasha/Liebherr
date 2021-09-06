@@ -8,8 +8,9 @@
 *.zip
 .DS_Store
 .idea/
-*.swp 
+*.swp
 /node_modules/
-/public/
-/.vscode
-/dist/
+/dist/css/
+/dist/fonts/
+/dist/images/
+/dist/js/
