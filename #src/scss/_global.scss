@@ -21,7 +21,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
-  color: #000000;
+  color: $black;
 }
 
 .container {
@@ -30,9 +30,19 @@ body {
   padding: 0 15px;
 }
 
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+
 button {
   padding: 0;
   margin: 0;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 button:active {
@@ -47,9 +57,57 @@ button:active {
 }
 
 .main {
+  background: #E5E5E5;
   flex: 1 0 auto;
 }
 
 .footer {
   flex: 0 0 auto;
+}
+
+.btn {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 141.69%;
+  color: #FFFFFF;
+  background-color: $yellowOrange;
+  padding: 12px 0;
+}
+
+.rent__slider,
+.projects-slider,
+.catalog-slider {
+  .slick-btn {
+    position: absolute;
+    background-color: transparent;
+    z-index: 9;
+    cursor: pointer;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF971D;
+  
+    &.slick-disabled {
+      border: 2px solid transparent;
+      .slider-arr-wrapper svg path {fill: #C4C4C4;}
+    }
+    .slider-arr-wrapper {
+      position: relative;
+      height: 100%;
+      svg {
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        left: -15px;
+      }
+    }
+  }
+  .slick-prev {
+    right: 87px;
+    .slider-arr-wrapper svg {
+      left: 15px;
+    }
+  }
+
 }

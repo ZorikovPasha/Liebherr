@@ -18,7 +18,7 @@ gulp.task('cssLibsMinic', function() {
     // 'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
     // 'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
     // 'node_modules/rateyo/lib/cjs/rateyo.css'
-    // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
   ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
@@ -34,7 +34,8 @@ gulp.task('jsLibsMinic', function() {
     // 'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
     // 'node_modules/rateyo/lib/cjs/rateyo.min.js',
     'node_modules/mixitup/dist/mixitup.min.js',
-    // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+    'node_modules/inputmask/dist/jquery.inputmask.min.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -115,4 +116,4 @@ gulp.task('watch', function() {
 
 gulp.task('minicAllLibs', gulp.parallel('cssLibsMinic', 'jsLibsMinic'))
 
-gulp.task('default', gulp.parallel('sassConvert', 'imageMin', 'carryFonts', 'watch', 'browsersync'));
+gulp.task('default', gulp.parallel( 'minicAllLibs', 'sassConvert', 'imageMin', 'carryFonts', 'watch', 'browsersync'));

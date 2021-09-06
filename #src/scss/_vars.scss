@@ -1,7 +1,3 @@
-// font-family: 'Montserrat', sans-serif;
-// font-family: 'PT Sans', sans-serif;
-// font-family: 'Roboto', sans-serif;
-
 @font-face {
   font-family: 'FuturaPt-Bold';
   src: url('../fonts/futura-pt-bold.woff2') format('woff2'),
@@ -17,3 +13,20 @@ $black: #2D2D2D;
 $dirt: #535554;
 $white: #F3F3F3;
 $grey: #C4C4C4;
+
+
+%h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: $black;
+  line-height: 141.69%;
+}
+
+%h3 {
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 142.19%;
+  font-family: 'PT Sans', sans-serif;
+  color: $black;
+}
