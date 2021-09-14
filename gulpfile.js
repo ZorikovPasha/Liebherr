@@ -13,6 +13,7 @@ var gulp = require('gulp'),
 
 gulp.task('cssLibsMinic', function() {
   return gulp.src([
+    // 'node_modules/normalize.css/normalize.css',
     'node_modules/slick-carousel/slick/slick.css',
     'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
     // 'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
@@ -35,7 +36,8 @@ gulp.task('jsLibsMinic', function() {
     // 'node_modules/rateyo/lib/cjs/rateyo.min.js',
     'node_modules/mixitup/dist/mixitup.min.js',
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
-    'node_modules/inputmask/dist/jquery.inputmask.min.js'
+    'node_modules/inputmask/dist/jquery.inputmask.min.js',
+    'node_modules/dotdotdot-js/dist/dotdotdot.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -78,8 +80,9 @@ gulp.task('refreshHtml', function() {
 
 gulp.task('refreshJs', function() {
   return gulp.src('#src/js/*.js')
+    .pipe(concat('main.min.js'))
     .pipe(uglify())
-    .pipe(rename({suffix: ".min"}))
+    // .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest('dist/js'))
     .pipe(browserSync.reload( {stream: true} ))
 });

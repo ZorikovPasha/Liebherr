@@ -17,12 +17,12 @@
 
   <div class="wrapper">
     
-  <header class="header">
+    <header class="header">
       <div class="header__top">
         <div class="container">
           <div class="header__top-inner">
             <div class="header__about">
-              <a class="header__logo" href="#">
+              <a class="header__logo" href="main.html">
                 <img class="header__logo-img" src="images/logo.svg" alt="">
               </a>
               <p class="header__about-text">Аренда спецтехники LIEBHERR c 2000 года</p>
@@ -32,7 +32,7 @@
               <a class="header__address" href="#">г. Москва, <br>
                 ул. Куликовская, 12</a>
             </div>
-            <a class="header__btn" href="#">Свяжитесь со мной</a>
+            <button class="header__btn">Свяжитесь со мной</button>
             <div class="header__tels">
               <a class="header__tel" href="tel:+74999299666">+7 (499)929-96-66</a>
               <a class="header__tel" href="tel:+79853645518">+7 (985)364-55-18</a>
@@ -45,557 +45,710 @@
       <div class="header__bottom">
         <div class="container">
           <div class="header__bottom-inner">
+
+            <button class="menu-btn">
+              <div class="menu-btn__line"></div>
+              <div class="menu-btn__line"></div>
+              <div class="menu-btn__line"></div>
+            </button>
+
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Каталог</a>
+                  <a class="header__nav-link" href="catalog.html">Каталог</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Услуги</a>
+                  <a class="header__nav-link" href="product.html">Услуги</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">О компании</a>
+                  <a class="header__nav-link" href="about.html">О компании</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Объекты</a>
+                  <a class="header__nav-link" href="objects.html">Объекты</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Цены</a>
+                  <a class="header__nav-link" href="contacts.html">Цены</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Блог</a>
+                  <a class="header__nav-link" href="blog.html">Блог</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Контакты</a>
+                  <a class="header__nav-link" href="contacts.html">Контакты</a>
                 </li>
-              </ul>
-            </nav>
-            <div class="header__input-box">
+            </ul>
+          </nav>
+          <div class="header__input-box">
+            <form action="" class="header__form">
               <input type="text" class="header__input">
-              <a class="header__input-search" href="#"></a>
-            </div>
+              <button class="header__input-search" type="submit"></button>  
+            </form>
           </div>
+        </div>
         </div>
       </div>
   </header>
 
+  <div class="mob-menu">
+    <button class="mob-menu__close"> 
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
   <main class="main">
 
-    <section class="top">
-      <div class="container-fluid">
-        <div class="top__inner">
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link">Каталог техники</span>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-          <div class="top__slider">
-            <div class="top__slider-item">
-              <div class="top__slider-numbers">
-                <span class="top__slider-num">01/</span>
-                <span class="top__slider-total">04</span>
-              </div>
-              <div class="top__slider-images">
-                <img class="top__slider-img" src="images/top-bg.jpg" alt="">
-              </div>
-            </div>
-            <div class="top__slider-item">
-              <div class="top__slider-numbers">
-                <span class="top__slider-num">02/</span>
-                <span class="top__slider-total">04</span>
-              </div>
-              <div class="top__slider-images">
-                <img class="top__slider-img" src="images/top-bg.jpg" alt="">
-              </div>
-            </div>
-            <div class="top__slider-item">
-              <div class="top__slider-numbers">
-                <span class="top__slider-num">03/</span>
-                <span class="top__slider-total">04</span>
-              </div>
-              <div class="top__slider-images">
-                <img class="top__slider-img" src="images/top-bg.jpg" alt="">
-              </div>
-            </div>
-            <div class="top__slider-item">
-              <div class="top__slider-numbers">
-                <span class="top__slider-num">04/</span>
-                <span class="top__slider-total">04</span>
-              </div>
-              <div class="top__slider-images">
-                <img class="top__slider-img" src="images/top-bg.jpg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="top__content">
-            <div class="container">
-              <div class="top__content-box">
-                <h1 class="top__title">Аренда спецтехники Liebherr для любых задач</h1>
-                <p class="top__text">Мобильные, гусеничные и башенные краны LIEBHERR в аренду для любых задач и грузов. работаем по всей России
-                </p>
-                <div class="top__btns">
-                  <button class="top__callme">Заказать звонок</button>
-                  <a class="top__link" href="#">Каталог техники</a>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section class="catalog-tabs">
+      <div class="container">
+        <h1 class="catalog-tabs__title">Каталог техники</h1>
+        <div class="catalog-tabs__items">
+          <button class="catalog-tabs__item" data-filter=".weight-40">40 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-50">50 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-65">65 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-68">68 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-70">70 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-82-5">82,5 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-40">82,5 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-84">84 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-85">85 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-90">90 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-93-8">93,8 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-95">95 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-112-5">112,5 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-120">120 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-131-6">131,6 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-150">150 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-160">160 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-200">200 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-250">250 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-280">280 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-300">300 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-350">350 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-400">400 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-50">500 тонн</button>
+          <button class="catalog-tabs__item" data-filter=".weight-750">750 тонн</button>
         </div>
-
       </div>
     </section>
 
-    <section class="rent">
+    <div class="catalog-content">
       <div class="container">
-        <div class="rent__inner">
-          <h2 class="rent__title">
-            <span>Спецтехника</span> в аренду</h2>
-          <div class="rent__slider">
-              <div class="rent__slider-item slider-item">
-                <div class="slider-item__body">
-                  <div class="slider-item__images">
-                    <img src="images/rent.png" alt="">
+        <div class="catalog-content__inner">
+          <aside class="catalog-content__aside aside-catalog">
+            <div class="aside-catalog__title-box">
+              <p class="aside-catalog__title">Параметры</p>
+            </div>
+            <div class="aside-catalog__box">
+              <form class="aside-catalog__form" action="">
+                <div class="aside-catalog__filter aside-filter">
+                  <p class="aside-filter__title">Вид техники</p>
+                  <label class="aside-filter__label">
+                    <input type="checkbox" class="aside-filter__check-real">
+                    <span class="aside-filter__check-fake"></span>
+                    <span class="aside-filter__text">Мобильные краны</span>
+                  </label>
+                  <label class="aside-filter__label">
+                    <input type="checkbox" class="aside-filter__check-real">
+                    <span class="aside-filter__check-fake"></span>
+                    <span class="aside-filter__text">Гусеничные краны</span>
+                  </label>
+                  <label class="aside-filter__label">
+                    <input type="checkbox" class="aside-filter__check-real">
+                    <span class="aside-filter__check-fake"></span>
+                    <span class="aside-filter__text">Низкорамные тралы</span>
+                  </label>
+                  <label class="aside-filter__label">
+                    <input type="checkbox" class="aside-filter__check-real">
+                    <span class="aside-filter__check-fake"></span>
+                    <span class="aside-filter__text">Модульные платформы</span>
+                  </label>
+                </div>
+                <div class="aside-catalog__filter aside-filter filter-weight">
+                  <p class="aside-filter__title">Грузоподъемность т.</p>
+                  <div class="aside-filter__line">
+                    <div class="aside-filter__input-box">
+                      <span class="aside-filter__from">от</span>
+                      <input type="number" class="aside-filter__input aside-filter__input-from filter-weight__from" value="">
+                    </div>
+                    <div class="aside-filter__input-box">
+                      <span class="aside-filter__from">до</span>
+                      <input type="number" class="aside-filter__input aside-filter__input-to filter-weight__to" value="">
+                    </div>
                   </div>
-                  <div class="slider-item__info">
-                    <h3 class="slider-item__title">Гусеничные краны</h3>
-                    <p class="slider-item__text">Аренда гусеничного крана – актуальная услуга для многих строительных площадок. Использование спецтехники существенно упрощает погрузку - выгрузку материалов, оптимизирует рабочий процесс.</p>
-                    <a class="slider-item__link" href="#">Выбрать спецтехнику</a>
+
+                  <input class="range-slider--weight" type="text" name="my_range" value=""
+                    data-type="double"
+                    data-min="40"
+                    data-max="750"
+                    data-from="40"
+                    data-to="160"
+                    data-grid="false"/>
+                </div>
+                <div class="aside-catalog__filter aside-filter filter-height">
+                  <p class="aside-filter__title">Высота подъема, м.</p>
+                  <div class="aside-filter__line">
+                    <div class="aside-filter__input-box">
+                      <span class="aside-filter__from">от</span>
+                      <input type="number" class="aside-filter__input aside-filter__input-from filter-height__from" value="">
+                    </div>
+                    <div class="aside-filter__input-box">
+                      <span class="aside-filter__from">до</span>
+                      <input type="number" class="aside-filter__input aside-filter__input-to filter-height__to" value="">
+                    </div>
                   </div>
+                  <input class="range-slider--height" type="text" name="my_range" value=""
+                    data-type="double"
+                    data-min="10"
+                    data-max="100"
+                    data-from="10"
+                    data-to="84"
+                    data-grid="false"/>
+                </div>
+                <div class="aside-catalog__filter aside-filter filter-length">
+                  <p class="aside-filter__title">Длина стрелы, м.</p>
+                  <div class="aside-filter__line">
+                    <div class="aside-filter__input-box">
+                      <span class="aside-filter__from">от</span>
+                      <input type="number" class="aside-filter__input aside-filter__input-from filter-length__from" value="">
+                    </div>
+                    <div class="aside-filter__input-box">
+                      <span class="aside-filter__from">до</span>
+                      <input type="number" class="aside-filter__input aside-filter__input-to filter-length__to" value="">
+                    </div>
+                  </div>
+                  <input class="range-slider--length" type="text" name="my_range" value=""
+                    data-type="double"
+                    data-min="20"
+                    data-max="120"
+                    data-from="30"
+                    data-to="100"
+                    data-grid="false"/>
+                </div>
+                <button class="aside-catalog__reset" type="reset">Очистить фильтр</button>
+                <button class="aside-catalog__submit" type="submit">Показать</button>
+              </form>
+            </div>
+
+            <div class="aside-catalog__title-box">
+              <p class="aside-catalog__title">Парк техники</p>
+            </div>
+            <div class="aside-catalog__box">
+              <div class="aside-catalog__dropdown aside-dropdown">
+                <p class="aside-dropdown__title">Мобильные краны Liebherr LTM</p>
+                <div class="aside-dropdown__box">
+                  <ul class="aside-dropdown__list">
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1040 (40 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1050 (50 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1070 (70 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1090 (90 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1095 (95 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1120 (120 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="#product.html">LTM 1250 (250 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1300 (300 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1400 (400 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1500 (500 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1750 (750 т.)</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            <div class="rent__slider-item slider-item">
-              <div class="slider-item__body">
-                <div class="slider-item__images">
-                  <img src="images/rent.png" alt="">
+              <div class="aside-catalog__dropdown aside-dropdown">
+                <p class="aside-dropdown__title">Гусеничные краны Liebherr LR</p>
+                <div class="aside-dropdown__box">
+                  <ul class="aside-dropdown__list">
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1040 (40 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1050 (50 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1070 (70 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1090 (90 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1095 (95 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1120 (120 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="#product.html">LTM 1250 (250 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1300 (300 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1400 (400 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1500 (500 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1750 (750 т.)</a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="slider-item__info">
-                  <h3 class="slider-item__title">Гусеничные краны</h3>
-                  <p class="slider-item__text">Аренда гусеничного крана – актуальная услуга для многих строительных площадок. Использование спецтехники существенно упрощает погрузку - выгрузку материалов, оптимизирует рабочий процесс.</p>
-                  <a class="slider-item__link" href="#">Выбрать спецтехнику</a>
+              </div>
+              <div class="aside-catalog__dropdown aside-dropdown">
+                <p class="aside-dropdown__title">Низкорамные тралы</p>
+                <div class="aside-dropdown__box">
+                  <ul class="aside-dropdown__list">
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1040 (40 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1050 (50 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1070 (70 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1090 (90 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1095 (95 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1120 (120 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="#product.html">LTM 1250 (250 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1300 (300 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1400 (400 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1500 (500 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1750 (750 т.)</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="aside-catalog__dropdown aside-dropdown">
+                <p class="aside-dropdown__title">Модульные платформы</p>
+                <div class="aside-dropdown__box">
+                  <ul class="aside-dropdown__list">
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1040 (40 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1050 (50 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1070 (70 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1090 (90 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1095 (95 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1120 (120 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="#product.html">LTM 1250 (250 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1300 (300 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1400 (400 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1500 (500 т.)</a>
+                    </li>
+                    <li class="aside-dropdown__list-item">
+                      <a class="aside-dropdown__link" href="product.html">LTM 1750 (750 т.)</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="rent__slider-item slider-item">
-              <div class="slider-item__body">
-                <div class="slider-item__images">
-                  <img src="images/rent.png" alt="">
+          </aside>
+          <div class="catalog-content__body">
+            <div class="catalog-content__controls catalog-controls">
+              <div class="catalog-controls__sort">
+                <img src="images/sort-icon.svg" alt="">
+                <div class="dropdown">
+                  <button class="catalog-controls__select sort-select">По умолчанию</button>
+                  <ul class="sort-select__list">
+                    <li class="sort-select__item" data-value="1">Не по умолчанию</li>
+                    <li class="sort-select__item" data-value="2">по высоте</li>
+                    <li class="sort-select__item" data-value="3">По грузоподъемности</li>
+                    <li class="sort-select__item" data-value="4">По длине</li>
+                  </ul>
+                  <input type="text" class="sort-select__input" value="">
                 </div>
-                <div class="slider-item__info">
-                  <h3 class="slider-item__title">Гусеничные краны</h3>
-                  <p class="slider-item__text">Аренда гусеничного крана – актуальная услуга для многих строительных площадок. Использование спецтехники существенно упрощает погрузку - выгрузку материалов, оптимизирует рабочий процесс.</p>
-                  <a class="slider-item__link" href="#">Выбрать спецтехнику</a>
+              </div>
+              <div class="catalog-controls__view view">
+                <button class="catalog-controls__btn view__btn-grid">
+                  <img src="images/view-grid.svg" alt="">
+                </button>
+                <button class="catalog-controls__btn view__btn-list">
+                  <img src="images/view-list.svg" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="catalog-content__items">
+              <div class="product-item mix weight-40" >
+                <div class="product-item__images">
+                  <img class="product-item__img" src="images/catalog/1.jpg" alt="">
+                </div>
+                <div class="product-item__title-box">
+                  <p class="product-item__title">Гусеничный кран Liebherr LR 1750</p>
+                </div>
+                <div class="product-item__info">
+                  <div class="product-item__box product-item__box--small">
+                    <div class="product-item__text product-item__text--small">Грузоподъемность:</div>
+                    <div class="product-item__text product-item__text--small">40 тонн</div>
+                    <div class="product-item__text product-item__text--small">Длина стрелы:</div>
+                    <div class="product-item__text product-item__text--small">35 м</div>
+                  </div>
+                  <a class="product-item__link" href="product.html">Все характеристики</a>
+                  <a class="product-item__btn btn" href="contacts.html">Арендовать</a>  
+                </div>
+              </div>
+              <div class="product-item mix weight-40">
+                <div class="product-item__images">
+                  <img class="product-item__img" src="images/catalog/1.jpg" alt="">
+                </div>
+                <div class="product-item__title-box">
+                  <p class="product-item__title">Гусеничный кран Liebherr LR 1750</p>
+                </div>
+                <div class="product-item__info">
+                  <div class="product-item__box product-item__box--small">
+                    <div class="product-item__text product-item__text--small">Грузоподъемность:</div>
+                    <div class="product-item__text product-item__text--small">40 тонн</div>
+                    <div class="product-item__text product-item__text--small">Длина стрелы:</div>
+                    <div class="product-item__text product-item__text--small">35 м</div>
+                  </div>
+                  <a class="product-item__link" href="product.html">Все характеристики</a>
+                  <a class="product-item__btn btn" href="contacts.html">Арендовать</a>  
+                </div>
+              </div>
+              <div class="product-item mix weight-50">
+                <div class="product-item__images">
+                  <img class="product-item__img" src="images/catalog/1.jpg" alt="">
+                </div>
+                <div class="product-item__title-box">
+                  <p class="product-item__title">Гусеничный кран Liebherr LR 1750</p>
+                </div>
+
+                <div class="product-item__info">
+                  <div class="product-item__box product-item__box--small">
+                    <div class="product-item__text product-item__text--small">Грузоподъемность:</div>
+                    <div class="product-item__text product-item__text--small">40 тонн</div>
+                    <div class="product-item__text product-item__text--small">Длина стрелы:</div>
+                    <div class="product-item__text product-item__text--small">35 м</div>
+                  </div>
+                  <a class="product-item__link" href="product.html">Все характеристики</a>
+                  <a class="product-item__btn btn" href="contacts.html">Арендовать</a>  
+                </div>
+              </div>
+              <div class="product-item mix weight-50">
+                <div class="product-item__images">
+                  <img class="product-item__img" src="images/catalog/1.jpg" alt="">
+                </div>
+                <div class="product-item__title-box">
+                  <p class="product-item__title">Гусеничный кран </p>
+                </div>
+                <div class="product-item__info">
+                  <div class="product-item__box product-item__box--small">
+                    <div class="product-item__text product-item__text--small">Грузоподъемность:</div>
+                    <div class="product-item__text product-item__text--small">40 тонн</div>
+                    <div class="product-item__text product-item__text--small">Длина стрелы:</div>
+                    <div class="product-item__text product-item__text--small">35 м</div>
+                  </div>
+                  <a class="product-item__link" href="product.html">Все характеристики</a>
+                  <a class="product-item__btn btn" href="contacts.html">Арендовать</a>  
+                </div>
+              </div>
+              <div class="product-item mix weight-200">
+                <div class="product-item__images">
+                  <img class="product-item__img" src="images/catalog/1.jpg" alt="">
+                </div>
+                <div class="product-item__title-box">
+                  <p class="product-item__title">Гусеничный кран </p>
+                </div>
+                <div class="product-item__info">
+                  <div class="product-item__box product-item__box--small">
+                    <div class="product-item__text product-item__text--small">Грузоподъемность:</div>
+                    <div class="product-item__text product-item__text--small">40 тонн</div>
+                    <div class="product-item__text product-item__text--small">Длина стрелы:</div>
+                    <div class="product-item__text product-item__text--small">35 м</div>
+                  </div>
+                  <a class="product-item__link" href="product.html">Все характеристики</a>
+                  <a class="product-item__btn btn" href="contacts.html">Арендовать</a>  
+                </div>
+              </div>
+              <div class="product-item mix weight-50">
+                <div class="product-item__images">
+                  <img class="product-item__img" src="images/catalog/1.jpg" alt="">
+                </div>
+                <div class="product-item__title-box">
+                  <p class="product-item__title">Гусеничный кран Liebherr LR 1750</p>
+                </div>
+                <div class="product-item__info">
+                  <div class="product-item__box product-item__box--small">
+                    <div class="product-item__text product-item__text--small">Грузоподъемность:</div>
+                    <div class="product-item__text product-item__text--small">40 тонн</div>
+                    <div class="product-item__text product-item__text--small">Длина стрелы:</div>
+                    <div class="product-item__text product-item__text--small">35 м</div>
+                  </div>
+                  <a class="product-item__link" href="product.html">Все характеристики</a>
+                  <a class="product-item__btn btn" href="contacts.html">Арендовать</a>  
+                </div>
+              </div>
+              <div class="product-item mix weight-300">
+                <div class="product-item__images">
+                  <img class="product-item__img" src="images/catalog/1.jpg" alt="">
+                </div>
+                <div class="product-item__title-box">
+                  <p class="product-item__title">Гусеничный кран Liebherr Liebherr Liebherr Liebherr LR 1750</p>
+                </div>
+                <div class="product-item__info">
+                  <div class="product-item__box product-item__box--small">
+                    <div class="product-item__text product-item__text--small">Грузоподъемность:</div>
+                    <div class="product-item__text product-item__text--small">40 тонн</div>
+                    <div class="product-item__text product-item__text--small">Длина стрелы:</div>
+                    <div class="product-item__text product-item__text--small">35 м</div>
+                  </div>
+                  <a class="product-item__link" href="product.html">Все характеристики</a>
+                  <a class="product-item__btn btn" href="contacts.html">Арендовать</a>  
+                </div>
+              </div>
+              <div class="product-item mix weight-70">
+                <div class="product-item__images">
+                  <img class="product-item__img" src="images/catalog/1.jpg" alt="">
+                </div>
+                <div class="product-item__title-box">
+                  <p class="product-item__title">Гусеничный кран Liebherr LR 1750</p>
+                </div>
+                <div class="product-item__info">
+                  <div class="product-item__box product-item__box--small">
+                    <div class="product-item__text product-item__text--small">Грузоподъемность:</div>
+                    <div class="product-item__text product-item__text--small">40 тонн</div>
+                    <div class="product-item__text product-item__text--small">Длина стрелы:</div>
+                    <div class="product-item__text product-item__text--small">35 м</div>
+                  </div>
+                  <a class="product-item__link" href="product.html">Все характеристики</a>
+                  <a class="product-item__btn btn" href="contacts.html">Арендовать</a>  
+                </div>
+              </div>
+              <div class="product-item mix weight-84">
+                <div class="product-item__images">
+                  <img class="product-item__img" src="images/catalog/1.jpg" alt="">
+                </div>
+                <div class="product-item__title-box">
+                  <p class="product-item__title">Гусеничный кран Liebherr LR 1750</p>
+                </div>
+                <div class="product-item__info">
+                  <div class="product-item__box product-item__box--small">
+                    <div class="product-item__text product-item__text--small">Грузоподъемность:</div>
+                    <div class="product-item__text product-item__text--small">40 тонн</div>
+                    <div class="product-item__text product-item__text--small">Длина стрелы:</div>
+                    <div class="product-item__text product-item__text--small">35 м</div>
+                  </div>
+                  <a class="product-item__link" href="product.html">Все характеристики</a>
+                  <a class="product-item__btn btn" href="contacts.html">Арендовать</a>  
                 </div>
               </div>
             </div>
-            <div class="rent__slider-item slider-item">
-              <div class="slider-item__body">
-                <div class="slider-item__images">
-                  <img src="images/rent.png" alt="">
-                </div>
-                <div class="slider-item__info">
-                  <h3 class="slider-item__title">Гусеничные краны</h3>
-                  <p class="slider-item__text">Аренда гусеничного крана – актуальная услуга для многих строительных площадок. Использование спецтехники существенно упрощает погрузку - выгрузку материалов, оптимизирует рабочий процесс.</p>
-                  <a class="slider-item__link" href="#">Выбрать спецтехнику</a>
-                </div>
-              </div>
+            <div class="pagination">
+              <a class="pagination__arrow pagination__arrow--active" href="#">
+                <svg width="31" height="8" viewBox="0 0 31 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.646446 4.35355C0.451183 4.15829 0.451183 3.84171 0.646446 3.64644L3.82843 0.464464C4.02369 0.269202 4.34027 0.269202 4.53553 0.464464C4.7308 0.659726 4.7308 0.976308 4.53553 1.17157L1.70711 4L4.53553 6.82842C4.73079 7.02369 4.73079 7.34027 4.53553 7.53553C4.34027 7.73079 4.02369 7.73079 3.82843 7.53553L0.646446 4.35355ZM31 4.5L0.999998 4.5L0.999998 3.5L31 3.5L31 4.5Z" fill="#535554"/>
+                  </svg>
+              </a>
+              <ul class="pagination__list">
+                <li class="pagination__item pagination__item--active">
+                  <span class="pagination__link">1</span>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">3</a>
+                </li>
+
+                <li class="pagination__item pagination__item--dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">5</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">6</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">7</a>
+                </li>
+              </ul>
+              <a class="pagination__arrow" href="#">
+                <svg width="31" height="8" viewBox="0 0 31 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30.3536 4.35355C30.5488 4.15829 30.5488 3.84171 30.3536 3.64644L27.1716 0.464464C26.9763 0.269202 26.6597 0.269202 26.4645 0.464464C26.2692 0.659726 26.2692 0.976308 26.4645 1.17157L29.2929 4L26.4645 6.82842C26.2692 7.02369 26.2692 7.34027 26.4645 7.53553C26.6597 7.73079 26.9763 7.73079 27.1716 7.53553L30.3536 4.35355ZM4.37114e-08 4.5L30 4.5L30 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="#535554"/>
+                  </svg>
+              </a>
             </div>
+
           </div>
         </div>
-
       </div>
-    </section>
+    </div>
 
-    <section class="guarantee">
-      <div class="container">
-        <div class="guarantee__inner">
-          <h2 class="guarantee__title">С нами надежно</h2>
-          <div class="guarantee__body">
-            <div class="guarantee__info">
-              <p class="guarantee__text">Компания Еврокран успешно работает на территории РФ с 2000 года. 
-              </p>
-              <p class="guarantee__text">В нашем автопарке гусеничные и мобильные краны известного немецкого бренда. 
-              </p>
-              <p class="guarantee__text">Среди них есть модели любой грузоподъемности, для погрузочных, монтажных, транспортировочных и других работ. 
-              </p>
-              <p class="guarantee__text">Обращение в компанию гарантирует комплексный подход к решению поставленных задач. Получить больше информации можно у менеджеров Компании Еврокран.
-              </p>
-              <button class="guarantee__btn">Заказать звонок</button>
-            </div>
-            <div class="guarantee__items">
-              <div class="guarantee__item">
-                <img class="guarantee__item-img" src="images/guarantee-1.svg" alt="">
-                <p class="guarantee__item-title">Поставка техники точно в срок</p>
-              </div>
-              <div class="guarantee__item">
-                <img class="guarantee__item-img" src="images/guarantee-2.svg" alt="">
-                <p class="guarantee__item-title">Сопровождение спецтехники</p>
-              </div>
-              <div class="guarantee__item">
-                <img class="guarantee__item-img" src="images/guarantee-3.svg" alt="">
-                <p class="guarantee__item-title">Квалифицированнные специалисты</p>
-              </div>
-              <div class="guarantee__item">
-                <img class="guarantee__item-img" src="images/guarantee-4.svg" alt="">
-                <p class="guarantee__item-title">Автопарк от ведущих мировых производителей</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="numbers">
-      <div class="container">
-        <div class="numbers__items">
-          <div class="numbers__item">
-            <p class="numbers__number">
-              <img src="images/20.png" alt="">
-            </p>
-            <p class="numbers__text">лет на рынке</p>
-          </div>
-          <div class="numbers__item">
-            <p class="numbers__number">
-              <img src="images/1 000+.png" alt="">
-            </p>
-            <p class="numbers__text">выполненных проектов</p>
-          </div>
-          <div class="numbers__item">
-            <p class="numbers__number">
-              <img src="images/20.png" alt="">
-            </p>
-            <p class="numbers__text">единиц техники всегда в наличии</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="projects">
-      <div class="container-fluid">
-        <div class="projects__inner">
-          <div class="container">
-            <h2 class="projects__title">Реализованные проекты</h2>
-          </div>
-
-          <div class="projects-nav-wrapper">
-            <div class="projects-nav">
-              <div class="projects-nav__item">
-                <div class="projects-nav__img-wrapper">
-                  <img class="projects-nav__img" src="images/projects/1.jpg" alt="">
-                </div>
-              </div>
-              <div class="projects-nav__item">
-                <div class="projects-nav__img-wrapper">
-                  <img class="projects-nav__img" src="images/projects/1.jpg" alt="">
-                </div>
-              </div>
-              <div class="projects-nav__item">
-                <div class="projects-nav__img-wrapper">
-                  <img class="projects-nav__img" src="images/projects/1.jpg" alt="">
-                </div>
-              </div>
-              <div class="projects-nav__item">
-                <div class="projects-nav__img-wrapper">
-                  <img class="projects-nav__img" src="images/projects/1.jpg" alt="">
-                </div>
-              </div>
-              <div class="projects-nav__item">
-                <div class="projects-nav__img-wrapper">
-                  <img class="projects-nav__img" src="images/projects/1.jpg" alt="">
-                </div>
-              </div>
-              <div class="projects-nav__item">
-                <div class="projects-nav__img-wrapper">
-                  <img class="projects-nav__img" src="images/projects/1.jpg" alt="">
-                </div>
-              </div>
-              <div class="projects-nav__item">
-                <div class="projects-nav__img-wrapper">
-                  <img class="projects-nav__img" src="images/projects/1.jpg" alt="">
-                </div>
-              </div>
-              <div class="projects-nav__item">
-                <div class="projects-nav__img-wrapper">
-                  <img class="projects-nav__img" src="images/projects/1.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="projects-nav__line"></div>
-          </div>
-
-
-          <div class="projects-slider">
-            <div class="projects-slider__item">
-              <div class="projects-slider__inner">
-                <div class="projects-slider__images">
-                  <img class="projects-slider__img" src="images/project-slider-1.jpg" alt="">
-                </div>
-                <div class="projects-slider__info">
-                  <p class="projects-slider__item-title">Монтаж вакуумных колонн LIEBHERR LR1300 и LIEBHERR LR1750</p>
-                  <p class="projects-slider__item-location">Калужская обл., Дзержинский район, пос. Полотняный завод</p>
-                  <p class="projects-slider__item-text">Монтаж вакуумных колонн К-201 и К-2 «Техническое перевооружение установки АТ-101» <br>
-                    Монтаж произведен двумя гусеничными кранами LIEBHERR LR1300 и LIEBHERR LR1750.</p>
-                  <a class="projects-slider__item-link" href="#">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="projects-slider__item">
-              <div class="projects-slider__inner">
-                <div class="projects-slider__images">
-                  <img class="projects-slider__img" src="images/project-slider-1.jpg" alt="">
-                </div>
-                <div class="projects-slider__info">
-                  <p class="projects-slider__item-title">Монтаж вакуумных колонн LIEBHERR LR1300 и LIEBHERR LR1750</p>
-                  <p class="projects-slider__item-location">Калужская обл., Дзержинский район, пос. Полотняный завод</p>
-                  <p class="projects-slider__item-text">Монтаж вакуумных колонн К-201 и К-2 «Техническое перевооружение установки АТ-101» <br>
-                    Монтаж произведен двумя гусеничными кранами LIEBHERR LR1300 и LIEBHERR LR1750.</p>
-                  <a class="projects-slider__item-link" href="#">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="projects-slider__item">
-              <div class="projects-slider__inner">
-                <div class="projects-slider__images">
-                  <img class="projects-slider__img" src="images/project-slider-1.jpg" alt="">
-                </div>
-                <div class="projects-slider__info">
-                  <p class="projects-slider__item-title">Монтаж вакуумных колонн LIEBHERR LR1300 и LIEBHERR LR1750</p>
-                  <p class="projects-slider__item-location">Калужская обл., Дзержинский район, пос. Полотняный завод</p>
-                  <p class="projects-slider__item-text">Монтаж вакуумных колонн К-201 и К-2 «Техническое перевооружение установки АТ-101» <br>
-                    Монтаж произведен двумя гусеничными кранами LIEBHERR LR1300 и LIEBHERR LR1750.</p>
-                  <a class="projects-slider__item-link" href="#">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="projects-slider__item">
-              <div class="projects-slider__inner">
-                <div class="projects-slider__images">
-                  <img class="projects-slider__img" src="images/project-slider-1.jpg" alt="">
-                </div>
-                <div class="projects-slider__info">
-                  <p class="projects-slider__item-title">Монтаж вакуумных колонн LIEBHERR LR1300 и LIEBHERR LR1750</p>
-                  <p class="projects-slider__item-location">Калужская обл., Дзержинский район, пос. Полотняный завод</p>
-                  <p class="projects-slider__item-text">Монтаж вакуумных колонн К-201 и К-2 «Техническое перевооружение установки АТ-101» <br>
-                    Монтаж произведен двумя гусеничными кранами LIEBHERR LR1300 и LIEBHERR LR1750.</p>
-                  <a class="projects-slider__item-link" href="#">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="projects-slider__item">
-              <div class="projects-slider__inner">
-                <div class="projects-slider__images">
-                  <img class="projects-slider__img" src="images/project-slider-1.jpg" alt="">
-                </div>
-                <div class="projects-slider__info">
-                  <p class="projects-slider__item-title">Монтаж вакуумных колонн LIEBHERR LR1300 и LIEBHERR LR1750</p>
-                  <p class="projects-slider__item-location">Калужская обл., Дзержинский район, пос. Полотняный завод</p>
-                  <p class="projects-slider__item-text">Монтаж вакуумных колонн К-201 и К-2 «Техническое перевооружение установки АТ-101» <br>
-                    Монтаж произведен двумя гусеничными кранами LIEBHERR LR1300 и LIEBHERR LR1750.</p>
-                  <a class="projects-slider__item-link" href="#">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="projects-slider__item">
-              <div class="projects-slider__inner">
-                <div class="projects-slider__images">
-                  <img class="projects-slider__img" src="images/project-slider-1.jpg" alt="">
-                </div>
-                <div class="projects-slider__info">
-                  <p class="projects-slider__item-title">Монтаж вакуумных колонн LIEBHERR LR1300 и LIEBHERR LR1750</p>
-                  <p class="projects-slider__item-location">Калужская обл., Дзержинский район, пос. Полотняный завод</p>
-                  <p class="projects-slider__item-text">Монтаж вакуумных колонн К-201 и К-2 «Техническое перевооружение установки АТ-101» <br>
-                    Монтаж произведен двумя гусеничными кранами LIEBHERR LR1300 и LIEBHERR LR1750.</p>
-                  <a class="projects-slider__item-link" href="#">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="projects-slider__item">
-              <div class="projects-slider__inner">
-                <div class="projects-slider__images">
-                  <img class="projects-slider__img" src="images/project-slider-1.jpg" alt="">
-                </div>
-                <div class="projects-slider__info">
-                  <p class="projects-slider__item-title">Монтаж вакуумных колонн LIEBHERR LR1300 и LIEBHERR LR1750</p>
-                  <p class="projects-slider__item-location">Калужская обл., Дзержинский район, пос. Полотняный завод</p>
-                  <p class="projects-slider__item-text">Монтаж вакуумных колонн К-201 и К-2 «Техническое перевооружение установки АТ-101» <br>
-                    Монтаж произведен двумя гусеничными кранами LIEBHERR LR1300 и LIEBHERR LR1750.</p>
-                  <a class="projects-slider__item-link" href="#">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="projects-slider__item">
-              <div class="projects-slider__inner">
-                <div class="projects-slider__images">
-                  <img class="projects-slider__img" src="images/project-slider-1.jpg" alt="">
-                </div>
-                <div class="projects-slider__info">
-                  <p class="projects-slider__item-title">Монтаж вакуумных колонн LIEBHERR LR1300 и LIEBHERR LR1750</p>
-                  <p class="projects-slider__item-location">Калужская обл., Дзержинский район, пос. Полотняный завод</p>
-                  <p class="projects-slider__item-text">Монтаж вакуумных колонн К-201 и К-2 «Техническое перевооружение установки АТ-101» <br>
-                    Монтаж произведен двумя гусеничными кранами LIEBHERR LR1300 и LIEBHERR LR1750.</p>
-                  <a class="projects-slider__item-link" href="#">Подробнее</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>  
-      </div>
-    </section>
-
-    <section class="catalog">
-      <div class="container">
-        <h2 class="catalog__title">Каталог техники</h2>
-      </div>
-      <div class="container-fluid">
-        <div class="catalog-slider">
-          <div class="catalog-slider__item">
-            <div class="catalog-slider__images">
-              <img class="catalog-slider__img" src="images/catalog/1.jpg" alt="">
-            </div>
-            <div class="catalog-slider__info">
-              <p class="catalog-slider__title">Гусеничный кран Liebherr LR 1750</p>
-              <div class="catalog-slider__box">
-                <div class="catalog-slider__text">Грузоподъемность:</div>
-                <div class="catalog-slider__text">40 тонн</div>
-                <div class="catalog-slider__text">Длина стрелы:</div>
-                <div class="catalog-slider__text">35 м</div>
-              </div>
-              <a class="catalog-slider__link" href="#">Все характеристики</a>
-              <a class="catalog-slider__btn" href="#">Арендовать</a>  
-            </div>
-          </div>
-          <div class="catalog-slider__item">
-            <div class="catalog-slider__images">
-              <img class="catalog-slider__img" src="images/catalog/1.jpg" alt="">
-            </div>
-            <div class="catalog-slider__info">
-              <p class="catalog-slider__title">Гусеничный кран Liebherr LR 1750</p>
-              <div class="catalog-slider__box">
-                <div class="catalog-slider__text">Грузоподъемность:</div>
-                <div class="catalog-slider__text">40 тонн</div>
-                <div class="catalog-slider__text">Длина стрелы:</div>
-                <div class="catalog-slider__text">35 м</div>
-              </div>
-              <a class="catalog-slider__link" href="#">Все характеристики</a>
-              <a class="catalog-slider__btn" href="#">Арендовать</a>  
-            </div>
-          </div>
-          <div class="catalog-slider__item">
-            <div class="catalog-slider__images">
-              <img class="catalog-slider__img" src="images/catalog/1.jpg" alt="">
-            </div>
-            <div class="catalog-slider__info">
-              <p class="catalog-slider__title">Гусеничный кран Liebherr LR 1750</p>
-              <div class="catalog-slider__box">
-                <div class="catalog-slider__text">Грузоподъемность:</div>
-                <div class="catalog-slider__text">40 тонн</div>
-                <div class="catalog-slider__text">Длина стрелы:</div>
-                <div class="catalog-slider__text">35 м</div>
-              </div>
-              <a class="catalog-slider__link" href="#">Все характеристики</a>
-              <a class="catalog-slider__btn" href="#">Арендовать</a>  
-            </div>
-          </div>
-          <div class="catalog-slider__item">
-            <div class="catalog-slider__images">
-              <img class="catalog-slider__img" src="images/catalog/1.jpg" alt="">
-            </div>
-            <div class="catalog-slider__info">
-              <p class="catalog-slider__title">Гусеничный кран Liebherr LR 1750</p>
-              <div class="catalog-slider__box">
-                <div class="catalog-slider__text">Грузоподъемность:</div>
-                <div class="catalog-slider__text">40 тонн</div>
-                <div class="catalog-slider__text">Длина стрелы:</div>
-                <div class="catalog-slider__text">35 м</div>
-              </div>
-              <a class="catalog-slider__link" href="#">Все характеристики</a>
-              <a class="catalog-slider__btn" href="#">Арендовать</a>  
-            </div>
-          </div>
-          <div class="catalog-slider__item">
-            <div class="catalog-slider__images">
-              <img class="catalog-slider__img" src="images/catalog/1.jpg" alt="">
-            </div>
-            <div class="catalog-slider__info">
-              <p class="catalog-slider__title">Гусеничный кран Liebherr LR 1750</p>
-              <div class="catalog-slider__box">
-                <div class="catalog-slider__text">Грузоподъемность:</div>
-                <div class="catalog-slider__text">40 тонн</div>
-                <div class="catalog-slider__text">Длина стрелы:</div>
-                <div class="catalog-slider__text">35 м</div>
-              </div>
-              <a class="catalog-slider__link" href="#">Все характеристики</a>
-              <a class="catalog-slider__btn" href="#">Арендовать</a>  
-            </div>
-          </div>
-        </div>
-        <div class="catalog__btn-wrapper">
-          <a class="catalog__btn" href="#">Перейти в каталог</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="cost">
-      <div class="container">
-        <div class="cost__inner">
-          <h2 class="cost__title">Из чего складывается стоимость аренды</h2>
-          <div class="cost__items">
-            <div class="cost__item">
-              <p class="cost__item-num cost__item-num--1">
-                <img src="images/cost-1.png" alt="">
-              </p>
-              <p class="cost__item-text">Стоимость аренды крана определяется так: 8 (восемь) часов работы каждой единицы спецтехники в течение смены.</p>
-            </div>
-            <div class="cost__item">
-              <p class="cost__item-num cost__item-num--2">
-                <img src="images/cost-2.png" alt="">
-              </p>
-              <p class="cost__item-text">География доставки спецтехники – вся территория РФ и страны СНГ.</p>
-            </div>
-            <div class="cost__item">
-              <p class="cost__item-num cost__item-num--3">
-                <img src="images/cost-3.png" alt="">
-              </p>
-              <p class="cost__item-text">Стоимость мобилизации и демобилизации за МКАД и на территорию в границах ТТК обговаривается индивидуально и требует дополнительной оплаты.</p>
-            </div>
-            <div class="cost__item">
-              <p class="cost__item-num cost__item-num--4">
-                <img src="images/cost-4.png" alt="">
-              </p>
-              <p class="cost__item-text">Обозначенная в прайс-листе стоимость услуг включает НДС – 20 %.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="main-form">
-      <div class="main-form__container">
+    <div class="help">
+      <div class="help__container">
         <div class="container">
-          <div class="main-form__inner">
-            <h3 class="main-form__title"> <span>Оперативно</span> поставим технику </h3>
-            <form action="" class="main-form__form">
-              <div class="main-form__line">
-                <input type="text" class="main-form__input" placeholder="Ваше имя">
-                <input type="text" class="main-form__input" placeholder="Ваш телефон*">
-                <button class="main-form__btn" type="submit">Заказать звонок</button>
+          <h2 class="help__title">Нужна помощь в подборе?</h2>
+          <form class="help__form" action="">
+            <input class="help__form-input" type="text" placeholder="Имя">
+            <input class="help__form-input input-mask" type="tel" placeholder="Телефон">
+            <button class="help__form-btn btn" type="submit">Получить консультацию</button>
+          </form>
+        </div>
+        <div class="help__images">
+          <img src="images/form-bg.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <section class="block-text">
+      <div class="container">
+        <h2 class="block-text__title">Заголовок</h2>
+        <p class="block-text__text">
+          Гусеничный кран LR 1750 находит свое применение в строительстве электростанций, нефтеперерабатывающих заводов, на строительных площадках мостов и при монтаже ветросиловых установок. 
+        </p>
+        <p class="block-text__text">
+          Эта 750-тонная машина имеет универсальное применение со своей 140-метровой основной стрелой, 105-метровым управляемым удлинителем стрелы, 21-метровым монтажным удлинителем, деррик-оборудованием и 400-тонным подвесным противовесом или балластировочной тележкой. 
+        </p>
+        <p class="block-text__text">
+          Компактные габариты компонентов подъемного крана и их умеренный индивидуальный вес позволяют обеспечить экономичную транспортировку этого подъемного крана к строительной площадке. 
+        </p>
+        <p class="block-text__text">
+          Этот 750-тонный кран может также использоваться с выдвижными опорами, имеющими опорную базу 13 x 13 м. Результирующая грузоподъемность в этом случае может быть увеличена до 370 %.
+        </p>
+        <p class="block-text__text">
+          Гусеничный кран LR 1750 находит свое применение в строительстве электростанций, нефтеперерабатывающих заводов, на строительных площадках мостов и при монтаже ветросиловых установок. 
+        </p>
+        <p class="block-text__text">
+          Эта 750-тонная машина имеет универсальное применение со своей 140-метровой основной стрелой, 105-метровым управляемым удлинителем стрелы, 21-метровым монтажным удлинителем, деррик-оборудованием и 400-тонным подвесным противовесом или балластировочной тележкой. 
+        </p>
+        <p class="block-text__text">
+          Компактные габариты компонентов подъемного крана и их умеренный индивидуальный вес позволяют обеспечить экономичную транспортировку этого подъемного крана к строительной площадке. 
+        </p>
+        <p class="block-text__text">
+          Этот 750-тонный кран может также использоваться с выдвижными опорами, имеющими опорную базу 13 x 13 м. Результирующая грузоподъемность в этом случае может быть увеличена до 370 %.Гусеничный кран LR 1750 находит свое применение в строительстве электростанций, нефтеперерабатывающих заводов, на строительных площадках мостов и при монтаже ветросиловых установок. 
+        </p>
+        <p class="block-text__text">
+          Эта 750-тонная машина имеет универсальное применение со своей 140-метровой основной стрелой, 105-метровым управляемым удлинителем стрелы, 21-метровым монтажным удлинителем, деррик-оборудованием и 400-тонным подвесным противовесом или балластировочной тележкой. 
+        </p>
+        <p class="block-text__text">
+          Компактные габариты компонентов подъемного крана и их умеренный индивидуальный вес позволяют обеспечить экономичную транспортировку этого подъемного крана к строительной площадке. 
+        </p>
+        <p class="block-text__text">
+          Этот 750-тонный кран может также использоваться с выдвижными опорами, имеющими опорную базу 13 x 13 м. Результирующая грузоподъемность в этом случае может быть увеличена до 370 %.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__inner">
+          <div class="contacts__content">
+            <p class="contacts__text">
+              Ежедневно мы развиваемся и стараемся стать лучше для вас, поэтому всегда рады получить от вас обратную связь с пожеланиями и идеями по улучшению наших продуктов!
+            </p>
+            <p class="contacts__text">
+              Если у вас остались вопросы или есть предложения как стать лучше пишите нам!
+            </p>
+            <a href="#" class="contacts__address">г. Москва, Россия, 117628,м. Бульвар Дмитрия Донского, ул. Куликовская, 12 </a>
+            <div class="contacts__box">
+              <div class="contacts__phones">
+                <a class="contacts__phone" href="tel:+74999299666">+7 (499)929-96-66</a>
+                <a class="contacts__phone" href="tel:+79853645518">+7 (985)364-55-18</a>
+                <a class="contacts__phone" href="tel:+79852262030">+7 (985)226-20-30</a>
               </div>
-              <label class="main-form__label">
-                <input class="main-form__checkbox-real" type="checkbox">
-                <span class="main-form__checkbox-fake"></span>
-                <span class="main-form__agree">Я согласен с 
-                  <a class="main-form__agree-link" href="#">условиями обработки</a> 
-                  и использования моих персональных данных</span>
-              </label>
-            </form>
+              <div class="contacts__time">
+                <a class="contacts__mail" href="mailto:evro-k@yandex.ru">evro-k@yandex.ru</a>
+                <p class="contacts__schedule">10:00 - 17:00</p>  
+              </div>
+            </div>
           </div>
+          <form class="contacts__form form-contacts">
+            <input type="text" class="form-contacts__input" placeholder="Имя">
+            <div class="form-contacts__line">
+              <input type="email" class="form-contacts__input" placeholder="E-mail">
+              <input type="tel" class="form-contacts__input input-mask" placeholder="Телефон">
+            </div>
+            <textarea class="form-contacts__area" placeholder="Сообщение"></textarea>
+            <label class="form-contacts__label form-label">
+              <input type="checkbox" class="form-label__checkbox-real">
+              <span class="form-label__checkbox-fake"></span>
+              <span class="form-label__text">Я согласен с <a href="#">условиями обработки</a> и использования моих персональных данных</span>
+            </label>
+            <button class="form-contacts__btn btn" type="submit">Оставить заявку</button>
+          </form>
         </div>
       </div>
     </section>
 
-    <section class="main-about">
-      <div class="container">
-        <div class="main-about__inner">
-          <h2 class="main-about__title"></h2>
-          <div class="main-about__box"></div>
-        </div>
-      </div>
-    </section>
+    <div class="map">
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1538.59309082283!2d37.5659100109784!3d55.57353554252417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aada349fa0335%3A0x664f1a375fe7ab8a!2z0JrRg9C70LjQutC-0LLRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1630922368972!5m2!1sru!2sru" 
+        width="100%"
+        height="548" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+    </div>
 
   </main>
 
@@ -611,25 +764,25 @@
           <p class="footer__column-title">Клиентам</p>
           <ul class="footer__column-list column-list">
             <li class="column-list__item">
-              <a class="column-list__link" href="#">О компании</a>
+              <a class="column-list__link" href="main.html">О компании</a>
             </li>
             <li class="column-list__item">
               <a class="column-list__link" href="#">Услуги</a>
             </li>
             <li class="column-list__item">
-              <a class="column-list__link" href="#">Каталог техники</a>
+              <a class="column-list__link" href="catalog.html">Каталог техники</a>
             </li>
             <li class="column-list__item">
-              <a class="column-list__link" href="#">Аренда кранов</a>
+              <a class="column-list__link" href="contacts.html">Аренда кранов</a>
             </li>
             <li class="column-list__item">
-              <a class="column-list__link" href="#">Наши работы</a>
+              <a class="column-list__link" href="objects.html">Наши работы</a>
             </li>
             <li class="column-list__item">
-              <a class="column-list__link" href="#">Прайс-лист</a>
+              <a class="column-list__link" href="about.html">Прайс-лист</a>
             </li>
             <li class="column-list__item">
-              <a class="column-list__link" href="#">Контакты</a>
+              <a class="column-list__link" href="contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
@@ -702,6 +855,7 @@
       </div>
     </div>
   </footer>
+
   
   </div>
 

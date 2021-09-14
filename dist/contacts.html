@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=PT+Sans:wght@700&family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    
+    <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <div class="header__about">
+                <a class="header__logo" href="main.html">
+                  <img class="header__logo-img" src="images/logo.svg" alt="">
+                </a>
+                <p class="header__about-text">Аренда спецтехники LIEBHERR c 2000 года</p>
+              </div>
+              <div class="header__info">
+                <p class="header__schedule">10:00-17:00</p>
+                <a class="header__address" href="#">г. Москва, <br>
+                  ул. Куликовская, 12</a>
+              </div>
+              <a class="header__btn" href="#">Свяжитесь со мной</a>
+              <div class="header__tels">
+                <a class="header__tel" href="tel:+74999299666">+7 (499)929-96-66</a>
+                <a class="header__tel" href="tel:+79853645518">+7 (985)364-55-18</a>
+                <a class="header__tel" href="tel:+79852262030">+7 (985)226-20-30</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__bottom-inner">
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Каталог</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Услуги</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">О компании</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Объекты</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Цены</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Блог</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a class="header__nav-link active" href="contacts.html">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__input-box">
+                <form action="" class="header__form">
+                  <input type="text" class="header__input">
+                  <button class="header__input-search" type="submit"></button>  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <main class="main">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__link">Контакты</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup__body">
+          <button class="popup__close">
+            <img src="images/close.svg" alt="">
+          </button>
+          <h3 class="popup__title">Арендовать спецтехнику</h3>
+          <p class="popup__text">Оставьте заявку на звонок и мы ответим на все ваши вопросы в самое ближайшее время</p>
+          <form class="popup__form" action="">
+            <input class="popup__input" type="text" placeholder="Ваше имя">
+            <input class="popup__input input-mask" type="tel" placeholder="Ваш телефон*">
+            <input class="popup__input email-mask" type="text" placeholder="Ваша почта">
+            <label class="popup__label form-label">
+              <input class="form-label__checkbox-real" type="checkbox">
+              <span class="form-label__checkbox-fake"></span>
+              <span class="form-label__text">Я согласен с <a href="#">условиями обработки</a> и использования моих персональных данных</span>
+            </label>
+            <button class="popup__btn btn" type="submit">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="popup-message">
+        <div class="popup-message__body">
+          <button class="popup-message__close">
+            <img src="images/close.svg" alt="">
+          </button>
+          <h3 class="popup-message__title">Ваша заявка отправлена</h3>
+          <p class="popup-message__text">Мы позвоним вам в самое ближайшее время</p>
+          <button class="popup-message__btn">Вернуться</button>
+        </div>
+      </div>
+
+      <section class="contacts">
+        <div class="container">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__inner">
+            <div class="contacts__content">
+              <a class="contacts__address" href="#">г. Москва, Россия, 117628,м. Бульвар Дмитрия Донского, ул. Куликовская, 12 </a>
+              <div class="contacts__box">
+                <div class="contacts__phones">
+                  <a class="contacts__phone" href="tel:+74999299666">+7 (499)929-96-66</a>
+                  <a class="contacts__phone" href="tel:+79853645518">+7 (985)364-55-18</a>
+                  <a class="contacts__phone" href="tel:+79852262030">+7 (985)226-20-30</a>
+                </div>
+                <div class="contacts__time">
+                  <a class="contacts__mail" href="mailto:evro-k@yandex.ru">evro-k@yandex.ru</a>
+                  <p class="contacts__schedule">10:00 - 17:00</p>  
+                </div>
+              </div>
+              <div class="contacts__requisite">
+                <p class="contacts__sub">Реквизиты:</p>
+                <p>ООО "Компания Еврокран" </p>
+                <div class="contacts__requisite-box">
+                  <p>ИНН:</p>
+                  <p>7718999293</p>
+                  <p>ОГРН:</p>
+                  <p>5147746130593</p>
+                </div>
+              </div>
+            </div>
+            <form class="contacts__form form-contacts">
+              <input type="text" class="form-contacts__input" placeholder="Имя">
+              <div class="form-contacts__line">
+                <input class="form-contacts__input email-mask" type="text" placeholder="E-mail">
+                <input class="form-contacts__input input-mask" type="tel" placeholder="Телефон">
+              </div>
+              <textarea class="form-contacts__area" placeholder="Сообщение"></textarea>
+              <label class="form-contacts__label form-label">
+                <input type="checkbox" class="form-label__checkbox-real">
+                <span class="form-label__checkbox-fake"></span>
+                <span class="form-label__text">Я согласен с <a href="#">условиями обработки</a> и использования моих персональных данных</span>
+              </label>
+              <button class="form-contacts__btn btn" type="submit">Оставить заявку</button>
+              </form>
+          </div>
+
+          <p class="contacts__sub contacts__sub--margin">Как добраться:</p>
+          <p class="contacts__subtext">
+            Принимая во внимание показатели успешности, глубокий уровень погружения играет определяющее значение для прогресса профессионального сообщества. Лишь предприниматели в сети интернет, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут ограничены исключительно образом мышления. Кстати, активно развивающиеся страны третьего мира смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+          </p>
+        </div>
+      </section>
+
+      <div class="map">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1538.59309082283!2d37.5659100109784!3d55.57353554252417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aada349fa0335%3A0x664f1a375fe7ab8a!2z0JrRg9C70LjQutC-0LLRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1630922368972!5m2!1sru!2sru" 
+          width="100%"
+          height="548" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__column">
+            <img class="footer__logo" src="images/footer-logo.svg" alt="">
+            <p class="footer__about">Аренда мобильных и гусеничных кранов LIEBHERR</p>
+            <p class="footer__rights">© 2000-2021 Все права защищены</p>
+          </div>
+          <div class="footer__column">
+            <p class="footer__column-title">Клиентам</p>
+            <ul class="footer__column-list column-list">
+              <li class="column-list__item">
+                <a class="column-list__link" href="main.html">О компании</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="#">Услуги</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="catalog.html">Каталог техники</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="contacts.html">Аренда кранов</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="objects.html">Наши работы</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="about.html">Прайс-лист</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <p class="footer__column-title">Техника</p>
+            <ul class="footer__column-list column-list">
+              <li class="column-list__item">
+                <a class="column-list__link" href="#">Гусеничные краны</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="#">Мобильные краны</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="#">Низеорамные краны</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="#">Модульные платформы</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <p class="footer__column-title">Услуги</p>
+            <ul class="footer__column-list column-list">
+              <li class="column-list__item">
+                <a class="column-list__link" href="#">Аренда гусеничного крана</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="#">Аренда мобильного крана</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="#">Аренда башенного крана</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="#">Перевозка негабаритного груза</a>
+              </li>
+              <li class="column-list__item">
+                <a class="column-list__link" href="#">Разработка ппрк</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <button class="footer__btn">Свяжитесь со мной</button>
+            <div class="footer__socials">
+              <a class="footer__social" href="#">
+                <img src="images/social-1.svg" alt="">
+              </a>
+              <a class="footer__social" href="#">
+                <img src="images/social-2.svg" alt="">
+              </a>
+              <a class="footer__social" href="#">
+                <img src="images/social-3.svg" alt="">
+              </a>
+              <a class="footer__social" href="#">
+                <img src="images/social-4.svg" alt="">
+              </a>
+              <a class="footer__social" href="#">
+                <img src="images/social-5.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="footer__column">
+            <p class="footer__column-title">Контакты</p>
+            <a class="footer__tel" href="tel:+74999299666">+7 (499)929-96-66</a>
+            <a class="footer__tel" href="tel:+79853645518">+7 (985)364-55-18</a>
+            <a class="footer__tel" href="tel:+79852262030">+7 (985)226-20-30</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
