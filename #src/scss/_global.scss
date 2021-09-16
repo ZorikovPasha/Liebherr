@@ -55,10 +55,26 @@ button:active {
 }
 
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100%;
   overflow-x: hidden;
+
+  background-color: transparent;
+  transition: all .1s;
+
+  &.covered::after {
+    content: '';
+    position: absolute;
+    z-index: 90;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(#000, .4);
+  }
 }
 
 .main {

@@ -7,8 +7,8 @@ function adaptive_header() {
 	let w = $(window).outerWidth();
 
   if ( w < 1010 ) {
-    $('.header__nav').appendTo('.mob-menu')
-    $('.header__info').appendTo('.mob-menu')
+    $('.header__nav').appendTo('.mob-menu__body')
+    $('.header__info').appendTo('.mob-menu__body')
   }
 
   if ( w < 993 ) {
@@ -16,7 +16,7 @@ function adaptive_header() {
   }
 
   if ( w < 820 ) {
-    $('.header__btn').appendTo('.mob-menu')
+    $('.header__btn').appendTo('.mob-menu__body')
     $('.main-about__video').appendTo('.main-about__box')
 
   }

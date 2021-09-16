@@ -130,8 +130,15 @@
 
 .aside-catalog {
 
-  max-width: 271px;
-  width: 100%;
+
+
+  &__body {
+
+    max-width: 271px;
+    width: 100%;
+    overflow-y: auto;
+  
+  }
 
   // .aside-catalog__box
 
@@ -210,6 +217,8 @@
   &__label {
     display: flex;
     align-items: center;
+
+
   }
 
   &__label + &__label {
@@ -236,6 +245,9 @@
     cursor: pointer;
     border: 1px solid #535554;
     background-color: transparent;
+
+    cursor: pointer;
+
   }
 
   &__check-real:checked + .aside-filter__check-fake::after {
@@ -256,6 +268,8 @@
     font-size: 14px;
     line-height: 142.19%;
     padding-left: 10px;
+
+    cursor: pointer;
   }
 
   &__line {
@@ -750,23 +764,30 @@
     display: block;
   }
   .aside-catalog {
-    position: absolute;
-    z-index: 20;
-    top: 50px;
+    position: fixed;
+    z-index: 100;
+    top: 10vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
     opacity: 0;
     visibility: hidden;
+
     transform: translate(-200%, 0);
     transition: all .2s;
-
+    background: #f3f3f3;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     &.opened {
-      background: #f3f3f3;
-      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-
       opacity: 1;
       visibility: visible;  
       transform: translate(0%, 0);
     }
   }
+
+  .aside-catalog__body {
+   }
   .catalog-content__body {
     margin-left: 0;
   }
@@ -774,6 +795,7 @@
     display: block;
     width: 100%;
   }
+
 
 
 
