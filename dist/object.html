@@ -17,12 +17,12 @@
 
   <div class="wrapper">
     
-  <header class="header">
+    <header class="header">
       <div class="header__top">
         <div class="container">
           <div class="header__top-inner">
             <div class="header__about">
-              <a class="header__logo" href="#">
+              <a class="header__logo" href="main.html">
                 <img class="header__logo-img" src="images/logo.svg" alt="">
               </a>
               <p class="header__about-text">Аренда спецтехники LIEBHERR c 2000 года</p>
@@ -32,7 +32,7 @@
               <a class="header__address" href="#">г. Москва, <br>
                 ул. Куликовская, 12</a>
             </div>
-            <a class="header__btn" href="#">Свяжитесь со мной</a>
+            <button class="header__btn">Свяжитесь со мной</button>
             <div class="header__tels">
               <a class="header__tel" href="tel:+74999299666">+7 (499)929-96-66</a>
               <a class="header__tel" href="tel:+79853645518">+7 (985)364-55-18</a>
@@ -45,41 +45,91 @@
       <div class="header__bottom">
         <div class="container">
           <div class="header__bottom-inner">
+
+            <button class="menu-btn">
+              <div class="menu-btn__line"></div>
+              <div class="menu-btn__line"></div>
+              <div class="menu-btn__line"></div>
+            </button>
+
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Каталог</a>
+                  <a class="header__nav-link" href="catalog.html">Каталог</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Услуги</a>
+                  <a class="header__nav-link" href="product.html">Услуги</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">О компании</a>
+                  <a class="header__nav-link" href="about.html">О компании</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link active" href="#">Объекты</a>
+                  <a class="header__nav-link active" href="objects.html">Объекты</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Цены</a>
+                  <a class="header__nav-link" href="contacts.html">Цены</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Блог</a>
+                  <a class="header__nav-link" href="blog.html">Блог</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Контакты</a>
+                  <a class="header__nav-link" href="contacts.html">Контакты</a>
                 </li>
-              </ul>
-            </nav>
-            <div class="header__input-box">
+            </ul>
+          </nav>
+          <div class="header__input-box">
+            <form action="" class="header__form">
               <input type="text" class="header__input">
-              <a class="header__input-search" href="#"></a>
-            </div>
+              <button class="header__input-search" type="submit"></button>  
+            </form>
           </div>
         </div>
+        </div>
       </div>
-  </header>
+    </header>
+
+    <div class="mob-menu">
+      <button class="mob-menu__close"> 
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
 
   <main class="main">
+
+    <div class="popup">
+      <div class="popup__body">
+          <button class="popup__close">
+            <img src="images/close.svg" alt="">
+          </button>
+          <h3 class="popup__title">Арендовать спецтехнику</h3>
+          <p class="popup__text">Оставьте заявку на звонок и мы ответим на все ваши вопросы в самое ближайшее время</p>
+          <form class="popup__form" action="">
+            <input class="popup__input" type="text" placeholder="Ваше имя">
+            <input class="popup__input input-mask" type="tel" placeholder="Ваш телефон*">
+            <input class="popup__input email-mask" type="text" placeholder="Ваша почта">
+            <label class="popup__label form-label">
+              <input class="form-label__checkbox-real" type="checkbox">
+              <span class="form-label__checkbox-fake"></span>
+              <span class="form-label__text">Я согласен с <a href="#">условиями обработки</a> и использования моих персональных данных</span>
+            </label>
+            <button class="popup__btn btn" type="submit">Оставить заявку</button>
+          </form>
+      </div>
+    </div>
+
+    <div class="popup-message">
+      <div class="popup-message__body">
+          <button class="popup-message__close">
+            <img src="images/close.svg" alt="">
+          </button>
+          <h3 class="popup-message__title">Ваша заявка отправлена</h3>
+          <p class="popup-message__text">Мы позвоним вам в самое ближайшее время</p>
+          <button class="popup-message__btn">Вернуться</button>
+      </div>
+    </div>
+
     <div class="breadcrumbs">
       <div class="container">
         <ul class="breadcrumbs__list">
@@ -100,7 +150,7 @@
       <div class="container">
         <h1 class="object-top__title">Разгрузка и монтаж трансформатора</h1>
         <p class="object-top__text">Разгрузка и монтаж трансформатора ТРДН 80000-110 весом 90т на объекте: НПЗ, г.Туапсе
-          Работу выполняет автокран LIEBHERR LTM1500грузоподъемностью 500т.</p>
+          Работу выполняет автокран LIEBHERR LTM1500 грузоподъемностью 500т.</p>
         <div class="object-top__slider">
           <div class="object-top__slider-item">
             <div class="object-top__images">
@@ -138,6 +188,9 @@
             </div>    
           </div>
         </div>
+
+
+
         <div class="object-top__thumbs">
           <div class="object-top__thumb">
             <div class="object-top__thumb-images">
@@ -178,7 +231,7 @@
       </div>  
     </section>
 
-    <section class=" block-text">
+    <section class="object-text block-text">
       <div class="container">
         <h2 class="block-text__title">Заголовок</h2>
         <p class="block-text__text">
@@ -269,8 +322,7 @@
             </div>
             <h6 class="item-object__title">
               <a class="item-object__link" href="object.html">
-                Разгрузка и монтаж трансформатора автокраном LIEBHERR LTM1500
-                г.Туапсе</a>
+                монтаж </a>
             </h6>
           </div>
           <div class=" item-object">
@@ -279,8 +331,7 @@
             </div>
             <h6 class="item-object__title">
               <a class="item-object__link" href="object.html">
-                Разгрузка и монтаж трансформатора автокраном LIEBHERR LTM1500
-                г.Туапсе</a>
+                Разгрузка г.Туапсе</a>
             </h6>
           </div>
         </div>

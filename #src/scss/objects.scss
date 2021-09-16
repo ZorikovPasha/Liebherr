@@ -64,3 +64,20 @@
     display: inline-block;
   }
 }
+
+
+@media (max-width:860px) {
+  .objects__items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  .objects__item:nth-child(n + 9) {
+    display: none;
+  }
+}
+
+@media (max-width:600px) {
+  .objects__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

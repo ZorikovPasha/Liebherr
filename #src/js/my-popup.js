@@ -6,7 +6,7 @@ $(function() {
   
   // Клик по ссылке "Закрыть".
   $(".popup__close").on("click", function () {
-    $(this).parent(".popup__body").parent(".popup").fadeOut();
+    $(this).closest(".popup").fadeOut();
     $("body").removeClass("lock");
   });
   

@@ -107,3 +107,31 @@
     padding: 12px 62px;
   }
 }
+
+@media (max-width:1220px) {
+  .blog__items::before,
+  .blog__items::after {
+    position: static;
+    display: none;
+  }
+}
+
+@media (max-width:992px) {
+  .blog__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog__items .item-blog {
+    max-width: none;
+  }
+}
+
+
+@media (max-width:600px) {
+  .blog__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog__items .item-blog:nth-child(n + 9) {
+    display: none;
+  }
+}
