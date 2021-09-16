@@ -10,7 +10,3 @@
 .idea/
 *.swp
 /node_modules/
-/dist/css/
-/dist/fonts/
-/dist/images/
-/dist/js/
