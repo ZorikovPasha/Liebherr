@@ -307,14 +307,18 @@
   // .aside-dropdown__title
 
   &__title {
+    position: relative;
+
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 15px;
     line-height: 142.19%;
     color: $black;
+
     padding-right: 39px;
     margin-bottom: 15px;
-    position: relative;
+
+    cursor: pointer;
     &::after,
     &::before {
       content: "";
