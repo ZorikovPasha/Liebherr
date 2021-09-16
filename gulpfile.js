@@ -37,7 +37,8 @@ gulp.task('jsLibsMinic', function() {
     'node_modules/mixitup/dist/mixitup.min.js',
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     'node_modules/inputmask/dist/jquery.inputmask.min.js',
-    'node_modules/dotdotdot-js/dist/dotdotdot.js'
+    'node_modules/dotdotdot-js/dist/dotdotdot.js',
+    'node_modules/wowjs/dist/wow.min.js',
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

@@ -84,7 +84,7 @@ button:active {
   }
 
   &:active {
-    background-color: rgba($yellowOrange, .5);
+    background-color: $Orange;
   }
 }
 
@@ -688,6 +688,7 @@ button:active {
   // .product-item__title
 
   &__title {
+    display: block;
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 20px;

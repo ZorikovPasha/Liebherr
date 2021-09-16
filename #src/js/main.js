@@ -16,4 +16,6 @@ $(function(){
   $('.aside-toggle').on('click', function() {
     $('.aside-catalog').toggleClass('opened')
   })
+
+  new WOW().init();
 });

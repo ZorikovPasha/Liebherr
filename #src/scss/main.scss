@@ -888,11 +888,12 @@
       content: "";
       position: absolute;
       z-index: 2;
-      left: 460px;
+      right: -38px;
       bottom: 0;
       width: 964px;
       height: 264px;
       background-image: url('../images/form-bg.png');
+      background-repeat: no-repeat;
     }
   }
 
@@ -1417,13 +1418,7 @@
 }
 
 @media (max-width:1090px) {
-  // .popup-message__body {
-  //   padding: 30px 20px;
-  // }
-  // .popup-message__box {
-  //   max-width: 470px;
-  //   padding-top: 20px;
-  // }
+
   .cost {
     padding-top: 94px;
   }
@@ -1436,6 +1431,13 @@
     margin: 0 auto;
     margin-bottom: 30px;
     padding: 0 10px;
+  }
+
+
+
+  .main-form__container::after {
+    right: auto;
+    left: 432px;
   }
 }
 

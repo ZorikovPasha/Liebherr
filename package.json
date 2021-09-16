@@ -24,6 +24,7 @@
     "ion-rangeslider": "^2.3.1",
     "mixitup": "^3.3.1",
     "sass": "^1.36.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "wowjs": "^1.1.3"
   }
 }
