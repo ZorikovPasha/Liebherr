@@ -1418,6 +1418,10 @@
 }
 
 @media (max-width:1090px) {
+  .popup__body {
+    max-width: 330px;
+  }
+
 
   .cost {
     padding-top: 94px;
@@ -1689,6 +1693,10 @@
 }
 
 @media (max-width:767px) {
+  .popup__body {
+    max-width: 290px;
+  }
+
   .top__inner {
     margin-bottom: 40px;
   }

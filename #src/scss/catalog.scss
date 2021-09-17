@@ -779,6 +779,7 @@
     transition: all .2s;
     background: #f3f3f3;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
     &.opened {
       opacity: 1;
       visibility: visible;  
@@ -786,8 +787,6 @@
     }
   }
 
-  .aside-catalog__body {
-   }
   .catalog-content__body {
     margin-left: 0;
   }
