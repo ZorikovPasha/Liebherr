@@ -143,27 +143,30 @@ $grey: #C4C4C4;
 
 %pop-up {
   position: fixed;
-  z-index: 998;
+  z-index: 996;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  
   background-color: rgba(#000, .5);
+
+  display: none;
+
+  &.shown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 %pop-up-body {
   max-width: 480px;
-  overflow: auto;
+  width: 100%;
 
-  margin: auto;
+  overflow: auto;
   padding: 30px 20px;
 
-  background: rgba(243, 243, 243, 0.7);
+  background: rgba(243, 243, 243, 1);
   backdrop-filter: blur(14px);
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
